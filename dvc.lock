@@ -18,3 +18,21 @@ stages:
       md5: 4fcb1a2356316fc4bfd3243e397b5d65.dir
       size: 36777824
       nfiles: 23
+  train_v3:
+    cmd: python train_with_mlflow.py --params params_v3.yaml
+    deps:
+    - path: train_with_mlflow.py
+      hash: md5
+      md5: f39b155c3ab38ee16ef559f803fb5944
+      size: 2885
+    - path: vehicle_data_v3
+      hash: md5
+      md5: bcfde996b171a1e11183c333f1099de3.dir
+      size: 44250627
+      nfiles: 2106
+    outs:
+    - path: vehicle_detection/exp_v3
+      hash: md5
+      md5: 75893294222db328c5e1e70e83aa914a.dir
+      size: 36668416
+      nfiles: 23
