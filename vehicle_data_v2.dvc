@@ -1,0 +1,6 @@
+outs:
+- md5: 03028b19fcc9c5afcb6910ffbdd9163a.dir
+  size: 43985628
+  nfiles: 2261
+  hash: md5
+  path: vehicle_data_v2
