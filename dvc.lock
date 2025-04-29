@@ -1,0 +1,20 @@
+schema: '2.0'
+stages:
+  train_v2:
+    cmd: python train_with_mlflow.py --params params_v2.yaml
+    deps:
+    - path: train_with_mlflow.py
+      hash: md5
+      md5: 06a9964ab8f4e7e00b957d18fc94c13a
+      size: 2885
+    - path: vehicle_data_v2
+      hash: md5
+      md5: c22a86d7c4234aec7c1eabb870265784.dir
+      size: 44217965
+      nfiles: 2110
+    outs:
+    - path: vehicle_detection/exp_v2
+      hash: md5
+      md5: 4fcb1a2356316fc4bfd3243e397b5d65.dir
+      size: 36777824
+      nfiles: 23
