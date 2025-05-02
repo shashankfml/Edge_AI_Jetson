@@ -36,3 +36,20 @@ stages:
       md5: 75893294222db328c5e1e70e83aa914a.dir
       size: 36668416
       nfiles: 23
+  monitor:
+    cmd: python monitor/monitor_drift.py
+    deps:
+    - path: feedback/
+      hash: md5
+      md5: 2f606fa3a4efe0b8606ffb790a5408d3.dir
+      size: 69874
+      nfiles: 6
+    - path: monitor/monitor_drift.py
+      hash: md5
+      md5: 6612ce37ab6fb432ebac0534c99873cb
+      size: 1132
+    outs:
+    - path: drift_report.json
+      hash: md5
+      md5: dad521b514ea9264facfb391092f5687
+      size: 77
