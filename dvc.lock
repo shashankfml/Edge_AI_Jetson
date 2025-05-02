@@ -41,7 +41,7 @@ stages:
     deps:
     - path: feedback/
       hash: md5
-      md5: 2f606fa3a4efe0b8606ffb790a5408d3.dir
+      md5: b7e3a915db745bd3cbacad500ed883f4.dir
       size: 69874
       nfiles: 6
     - path: monitor/monitor_drift.py
@@ -53,3 +53,26 @@ stages:
       hash: md5
       md5: dad521b514ea9264facfb391092f5687
       size: 77
+  retrain:
+    cmd: bash scripts/retrain.sh
+    deps:
+    - path: data/vehicle_data_v1
+      hash: md5
+      md5: 0902a8baacefbded19c55945d7c0f7a9.dir
+      size: 36307390
+      nfiles: 2271
+    - path: feedback/
+      hash: md5
+      md5: b7e3a915db745bd3cbacad500ed883f4.dir
+      size: 69874
+      nfiles: 6
+    - path: scripts/retrain.sh
+      hash: md5
+      md5: 397339782031792bc65b4597249be50c
+      size: 344
+    outs:
+    - path: ./app/core/models/vehicle_detection/exp_v4
+      hash: md5
+      md5: 8bc3444cd225f330ebb913ccefc8aecc.dir
+      size: 37815512
+      nfiles: 23
