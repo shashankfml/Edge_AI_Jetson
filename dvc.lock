@@ -46,10 +46,10 @@ stages:
       nfiles: 6
     - path: monitor/monitor_drift.py
       hash: md5
-      md5: 6612ce37ab6fb432ebac0534c99873cb
-      size: 1132
+      md5: afac544c503b6a80b0315513337120de
+      size: 1140
     outs:
-    - path: drift_report.json
+    - path: monitor/drift_report.json
       hash: md5
       md5: dad521b514ea9264facfb391092f5687
       size: 77
