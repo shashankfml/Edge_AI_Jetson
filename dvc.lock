@@ -73,6 +73,6 @@ stages:
     outs:
     - path: ./app/core/models/vehicle_detection/exp_v4
       hash: md5
-      md5: 8bc3444cd225f330ebb913ccefc8aecc.dir
-      size: 37815512
+      md5: 850f161ade8e394bc0469e1a27ebe969.dir
+      size: 37801917
       nfiles: 23
