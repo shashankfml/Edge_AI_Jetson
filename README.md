@@ -1,9 +1,5 @@
 # 🚀 Edge AI Vehicle Detection: MLOps on Resource-Constrained Devices
 
-## **Deploying Computer Vision at the Edge: Jetson Nano & Beyond**
-
-A **comprehensive MLOps framework** for deploying **real-time vehicle detection** on **NVIDIA Jetson Nano**. This project showcases the complete pipeline of training, optimizing, and deploying AI models on this low-power, low-memory edge computing platform while maintaining production-grade performance and reliability.
-
 ## 🎯 **The Edge Computing Revolution**
 
 **Traditional AI deployment is dead** - this project proves that **enterprise-grade AI** can run on **devices with as little as 2GB RAM** and **5W power consumption**. We demonstrate how to:
