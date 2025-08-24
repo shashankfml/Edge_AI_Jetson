@@ -1,0 +1,46 @@
+# Inference Configuration
+# Choose the inference backend for optimal performance
+
+inference:
+  # Available backends: 'pytorch', 'onnx', 'tensorrt'
+  backend: 'pytorch'  # Default to PyTorch for compatibility
+
+  # Model paths
+  vehicle_model_path: 'app/core/models/vehicle_detection/exp1/weights/best.pt'
+  plate_model_path: 'app/core/models/license_data_pyimagesearch/yolov5s_size640_epochs5_batch32_small/weights/best.pt'
+
+  # Inference parameters
+  confidence_threshold: 0.5
+  nms_threshold: 0.45
+  max_detections: 1000
+
+  # Performance settings
+  enable_fp16: true  # Use half precision for faster inference
+  batch_size: 1
+  device: 'auto'  # 'auto', 'cpu', 'cuda'
+
+  # ONNX specific settings
+  onnx:
+    opset_version: 11
+    simplify_model: true
+    dynamic_batch: true
+
+  # TensorRT specific settings (when available)
+  tensorrt:
+    workspace_size: 1073741824  # 1GB
+    max_batch_size: 1
+    fp16_mode: true
+    int8_mode: false
+    calibration_data: null
+
+# Performance monitoring
+monitoring:
+  enable_benchmarking: true
+  log_inference_time: true
+  track_memory_usage: false
+
+# Export settings
+export:
+  export_onnx: false
+  export_tensorrt: false
+  output_dir: 'models/optimized'

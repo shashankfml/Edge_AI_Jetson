@@ -1,4 +1,94 @@
-/vehicle_data_v1
-/vehicle_data_v2
-/vehicle_data_v3
-/drift_report.json
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Model files (large files should be tracked with DVC)
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+*.weights
+
+# Data directories (should be tracked with DVC)
+data/
+datasets/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Process outputs
+process_video/
+feedback/images/
+feedback/labels/
+
+# DVC
+.dvc/cache/
+
+# Docker
+.dockerignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large model directories (use DVC instead)
+app/core/models/*/
+!app/core/models/.gitkeep
+
+# Streamlit
+.streamlit/

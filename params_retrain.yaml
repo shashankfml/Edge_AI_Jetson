@@ -1,0 +1,9 @@
+train:
+  img: 640
+  batch: 32
+  epochs: 5  
+  data: ./data/vehicle_data_v1/vehicle_data.yaml
+  weights: ./app/core/models/vehicle_detection/exp1/weights/best.pt  # Start from last good model
+  workers: 4
+  project: app/core/models/vehicle_detection #vehicle_detection
+  name: exp_v4  # Auto-incremented version

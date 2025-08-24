@@ -58,8 +58,8 @@ stages:
     deps:
     - path: data/vehicle_data_v1
       hash: md5
-      md5: 0902a8baacefbded19c55945d7c0f7a9.dir
-      size: 36307390
+      md5: 7078e279e95813676ecfb657ca06c360.dir
+      size: 36307400
       nfiles: 2271
     - path: feedback/
       hash: md5
@@ -73,6 +73,6 @@ stages:
     outs:
     - path: ./app/core/models/vehicle_detection/exp_v4
       hash: md5
-      md5: 850f161ade8e394bc0469e1a27ebe969.dir
-      size: 37801917
+      md5: b477ddac73a86adec7502135f5877d1c.dir
+      size: 37716925
       nfiles: 23

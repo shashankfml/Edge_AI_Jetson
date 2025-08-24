@@ -1,0 +1,9 @@
+train:
+  img: 640
+  batch: 32
+  epochs: 5
+  data: ./data/vehicle_data_v3/vehicle_data.yaml  
+  weights: yolov5s.pt
+  workers: 4
+  project: app/core/models/vehicle_detection
+  name: exp_v3
