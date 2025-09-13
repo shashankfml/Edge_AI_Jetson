@@ -1,5 +1,8 @@
 # 🚀 Edge AI Vehicle Detection: MLOps on Resource-Constrained Devices
 
+## Project Report
+https://drive.google.com/file/d/1nKJA6Goo76TXhiU8WIl956UjXZ8_iabR/view?usp=sharing
+
 ## 🎯 **The Edge Computing Revolution**
 
 **Traditional AI deployment is dead** - this project proves that **enterprise-grade AI** can run on **devices with as little as 2GB RAM** and **5W power consumption**. We demonstrate how to:
